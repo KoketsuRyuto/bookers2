@@ -69,12 +69,12 @@
         </div>
       </nav>
     </header>
-    <main class="mt-3">
       <div class="flash-notifications">
       <% flash.each do |key, value| %>
         <%= content_tag(:div, value, class: key) %>
       <% end %>
       </div>
+    <main class="mt-3">
       <%= yield %>
     </main>
     <footer>
